@@ -1,0 +1,117 @@
+@font-face {
+    font-family: fall-font;
+    src: url(../fonts/GamjaFlower-Regular.ttf);
+}
+
+@font-face {
+    font-family: arima-bold;
+    src: url(fonts/Arima-Bold.ttf);
+}
+
+:root {
+    --orange: rgb(249, 132, 77);
+}
+
+body {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    font-family: arima-bold;
+    color: black;
+}
+
+.left {
+    display: flex;
+    flex-direction: column;
+    /* background-image: url("../images/psl.jpg"); */
+    background-image: url("images/rinck-content-studio-_e9aAVpEM8Q-unsplash.jpg");
+    /* background-image: url("images/theo-crazzolara-D_asLd6cGCY-unsplash.jpg"); */
+    background-size: cover;
+    width: 30%;
+    min-width: 200px;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    flex:1;
+    margin-top: 35%;
+}
+
+.header h1 {
+    display: flex;
+    font-family: fall-font ;
+    color: var(--orange);
+    width: 75%;
+    text-align: center;
+}
+
+.footer {
+    display: flex;
+    color: rgb(255, 255, 255);
+    justify-content:center;
+}
+
+.footer a {
+    color: white;
+}
+
+.right {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    min-width: 400px;
+}
+
+.right .text {
+    background-color: var(--orange);
+    padding: 20px;
+}
+
+.right .sign-up {
+    padding: 20px;
+}
+
+.right .form-div {
+    border: 1px transparent rgba(96, 96, 96, 0.653);
+    box-shadow: 10px 5px 5px var(--orange);
+    display: flex;
+    flex-flow: wrap;
+}
+
+.form-div p {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    width: 45%;
+}
+
+.submit {
+    padding: 20px;
+}
+
+.submit a {
+    color: black;
+}
+
+[type=password]:invalid {
+    border: 1px solid red;
+}
+
+input:focus {
+    /* border: 2px solid var(--orange); */
+    outline-color: var(--orange);
+}
+
+button {
+    background-color: var(--orange);
+    border-radius: 5px;
+}
+
+.sign-up-border {
+    display: flex;
+    flex:2;
+    background-size: cover;
+    background-image: url(images/mariola-grobelska-CSjc2kUbxJk-unsplash.jpg);
+}
